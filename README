@@ -1,0 +1,21 @@
+Nume: Raducanu
+Prenume: Constantin
+Grupa: 323CC
+Dificultate: scazuta-medie
+timp alocat: 20h
+
+PRECIZARI:
+	A fost o tema destul de interesanta, datorita in special partii unde a trebui sa ne creeam noi propriul nostru GUI.Cea mai mare dificultatea al temei a fost lupta cu Layout Managerul pentru ca nu reuseam sa-mi aranjez componentele asa cum trebuie.
+
+Prima parte:
+	Prima parte a constat in implementarea cerintelor(claselor si metodelor) clare din tema.Tot ce am adaugat eu 
+de la mine au fost constructorii la fiecare clasa si metode gen getPret(int cantitate, double pret), destul de sumare, iar in rest am respectat cu strictete cerintele.Am o clasa Testare care imi creeaza un obiect de tip gestiune ce contine toate informatiile din fisiere prelucrate pe care care o folosesc in  partea grafica.Am implementat de asemenea si Design Patternul Singleton si Factory, totusi pentru factori nu am am facut o clasa separata, ci am facut o metoda statica in clasa  magazin.
+
+Partea 2:
+	Am facut 3 frame-uri principace :
+		Frame-ul de login (clasa Logare) ce facea tranzitia la aplicatia in sine.Aceasta continea un buton register ce crea un frame numit register.Clasa register permitea crearea unui nou utilizator si ii retinea pe acestia 
+intr-un fisier text.Al treilea frame si cel mai important reprezinta locul unde am realizat aplicatia in sine. M-am folosit 
+de un JTabbedPane cu 4 taburi:O pagina de start ce arata numele utilizatorului logat(are doar titlu si o poza incarcata), pagina de incarcare, pagina de gestionare a produselor si pagina cu statistici.Pentru fiecare dintre taburi am facut un panel separat cu o clasa 
+ce extindea clasa JPanel si ce implementa caracteristicile fiecarui tab in parte .Cea mai dificila parte  a fost cea cu gestionarea produselor, unde m-am folosit de un JTable pentru afisarea datelor.Folosindu-ma de JTable a fost destul de usor de implemenat sortarea, cautarea sau stergerea produselor, datorita metodelor deja implementate .La aceasta pagina m-am folosit de 3 JPaneluri pentru 3 sectiunii: Cea de JTabel,butoanele de jos si JTextFieldurile impreuna cu JLaburile din dreapta.La pagina cu incarcare fisierelor am un buton pentru fiecare fisier in parte ce este conectat la un ActionListener si ce salveaza path-ul intr-o variabila de tipul String.Dupa ce am path-ul pentru fiecare fisier text, atunci creez obiectul gestiune si apoi fisier out.txt.
+
+
